@@ -16,7 +16,7 @@ contract TokenFaucet is Ownable {
         dripToken = _dripToken;
         dripAmount = _dripAmount;
     }
-    
+
     function receiveDrip() external {
         dripToken.safeTransfer(msg.sender, dripAmount);
     }
