@@ -24,6 +24,10 @@ jobs:
 
       - name: Show Forge version
         run: forge --version
+      
+      - name: Install dependencies
+        run: forge install
+        working-directory: ./SmartContract
 
       - name: Run Forge fmt
         run: forge fmt --check
